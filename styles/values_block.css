@@ -1,0 +1,8 @@
+.values_block__container {
+	display: grid;
+	gap: 40px;
+}
+
+.values_block__demo {
+	text-align: center;
+}
