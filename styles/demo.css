@@ -1,6 +1,8 @@
 .demo {
 	display: grid;
 	gap: 14px;
+
+	height: max-content;
 }
 
 .demo__description {
@@ -10,4 +12,20 @@
 
 .demo__button {
 	width: 100%;
+}
+
+@media (min-width: 850px) {
+	.demo {
+		gap: 10px;
+	}
+
+	.demo__description {
+		margin-bottom: 28px;
+
+		font-size: 22px;
+	}
+
+	.demo__button {
+		width: unset;
+	}
 }
