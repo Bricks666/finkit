@@ -1,0 +1,23 @@
+.features {
+	grid-template-columns: repeat(auto-fit, minmax(164px, 1fr));
+	gap: 20px 15px;
+}
+
+.features__item {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+
+	min-height: 118px;
+
+	padding: 15px;
+	padding-top: 0;
+}
+
+.features__icon {
+	--icon-size: 40px;
+
+	margin-top: -5%;
+
+	font-size: 24px;
+}
