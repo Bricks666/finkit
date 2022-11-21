@@ -6,3 +6,15 @@
 .products_block__head {
 	text-align: center;
 }
+
+@media (max-width: 800px) {
+	.products_block {
+		margin-bottom: 40px;
+	}
+}
+
+@media (min-width: 800px) {
+	.products_block {
+		margin-bottom: 100px;
+	}
+}

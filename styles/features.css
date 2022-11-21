@@ -8,27 +8,32 @@
 
 .features__item {
 	display: grid;
-	align-items: center;
-	justify-content: center;
 
 	min-height: 118px;
-
-	padding: 15px;
-	padding-top: 0;
 }
 
 .features__icon {
 	--icon-size: 40px;
 
-	margin-top: -5%;
-
 	font-size: 24px;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 600px) {
 	.features__item {
-		align-items: start;
-		justify-items: start;
+		align-items: center;
+		justify-content: center;
+
+		padding: 15px;
+		padding-top: 0;
+	}
+
+	.features__icon {
+		margin-top: -10%;
+	}
+}
+
+@media (min-width: 600px) {
+	.features__item {
 		grid-template-columns: 1fr max-content;
 		gap: 20px;
 
@@ -36,9 +41,7 @@
 	}
 
 	.features__icon {
-		order: 1;
+		order: var(--features-order, 1);
 		align-self: start;
-
-		margin: 0;
 	}
 }

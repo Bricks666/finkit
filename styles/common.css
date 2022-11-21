@@ -33,7 +33,6 @@ body {
 
 	border-radius: 12px;
 
-	font-size: 18px;
 	line-height: 1.4em;
 	color: var(--base-contract-color);
 
@@ -42,17 +41,15 @@ body {
 
 .button:hover,
 .button:focus-visible {
-	box-shadow: 0 0 8px var(--shadow-color-100);
+	box-shadow: 6px 4px 12px var(--shadow-color-100);
 }
 
 .head {
-	font-size: 36px;
 	line-height: 1.3em;
 	font-weight: 700;
 }
 
 .subhead {
-	font-size: 24px;
 	line-height: 1.3em;
 	font-weight: 500;
 }
@@ -60,7 +57,6 @@ body {
 .paragraph {
 	font-size: 14px;
 	line-height: 1.4em;
-	word-break: break-all;
 }
 
 .lighter {
@@ -89,6 +85,12 @@ body {
 	border-radius: 20px;
 
 	box-shadow: 6px 4px 12px var(--shadow-color-90);
+
+	transition: box-shadow 250ms ease-in-out;
+}
+
+.list__item:hover {
+	box-shadow: 6px 4px 12px var(--shadow-color-100);
 }
 
 .icon {
@@ -106,13 +108,23 @@ body {
 	border-radius: 50%;
 }
 
-.block {
-	margin-bottom: 40px;
+@media (max-width: 800px) {
+	.head {
+		font-size: 36px;
+	}
+
+	.subhead {
+		font-size: 24px;
+	}
 }
 
-@media (min-width: 850px) {
+@media (min-width: 800px) {
 	.head {
 		font-size: 64px;
+	}
+
+	.subhead {
+		font-size: 38px;
 	}
 
 	.button {

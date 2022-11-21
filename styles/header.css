@@ -36,8 +36,12 @@
 	border-radius: 50%;
 
 	background-color: transparent;
+
+	transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
+.header__language:hover,
+.header__language:focus-visible,
 .header__language--active {
 	background-color: var(--base-contract-color);
 
@@ -50,6 +54,8 @@
 
 @media (max-width: 550px) {
 	.header {
+		margin-bottom: 40px;
+
 		overflow: hidden;
 	}
 
@@ -67,6 +73,10 @@
 }
 
 @media (min-width: 550px) {
+	.header {
+		margin-bottom: 40px;
+	}
+
 	.header__container {
 		grid-template-columns: max-content 1fr;
 	}
@@ -94,9 +104,11 @@
 	}
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1100px) {
 	.header {
 		position: relative;
+
+		margin-bottom: 145px;
 	}
 
 	.header__demo {
