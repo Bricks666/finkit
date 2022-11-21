@@ -10,12 +10,14 @@
 
 body {
 	font-family: 'Euclid Circular', sans-serif;
+	color: var(--base-color);
 }
 
 .container {
 	max-width: 1100px;
 
 	margin: 0 auto;
+	padding: 0 16px;
 }
 
 .button {
@@ -56,6 +58,7 @@ body {
 .paragraph {
 	font-size: 14px;
 	line-height: 1.4em;
+	word-break: break-all;
 }
 
 .lighter {
@@ -99,4 +102,8 @@ body {
 	color: var(--primary-color-100);
 
 	border-radius: 50%;
+}
+
+.block {
+	margin-bottom: 40px;
 }

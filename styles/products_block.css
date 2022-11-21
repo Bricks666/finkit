@@ -1,0 +1,8 @@
+.products_block__container {
+	display: grid;
+	gap: 24px;
+}
+
+.products_block__head {
+	text-align: center;
+}

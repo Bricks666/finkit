@@ -8,14 +8,15 @@
 		<title>FinKit</title>
 	</head>
 	<body>
-		<header class="header">
+		<header class="block header">
 			<div class="container header__container">
 				<section class="header__head">
-          <div class="header__languages">
-            <button class="header__language header__language--active">Ru</button>
-            <button class="header__language">En</button>
-          </div>
-
+					<div class="header__languages">
+						<button class="header__language header__language--active">
+							Ru
+						</button>
+						<button class="header__language">En</button>
+					</div>
 				</section>
 				<section class="demo">
 					<h1 class="head demo__head">
@@ -29,7 +30,8 @@
 				</section>
 				<img
 					class="header__image"
-					src="./assets/images/main_image.webp"
+					src="./assets/images/common/main_image.webp"
+					srcset="./assets/images/retina/main_image@2x.webp 2x"
 					alt="FinKit logo"
 				/>
 				<ul class="list features header__features">
@@ -64,19 +66,39 @@
 			</div>
 		</header>
 		<main class="main">
-			<section class="products">
-				<h2 class="products__head"></h2>
-				<ul class="products__list">
-					<li class="products__item"></li>
-					<li class="products__item"></li>
-				</ul>
-			</section>
-			<section class="products">
-				<h2 class="products__head"></h2>
-				<ul class="products__list">
-					<li class="products__item"></li>
-					<li class="products__item"></li>
-				</ul>
+			<section class="block products_block">
+				<div class="container products_block__container">
+					<h2 class="subhead products_block__head">
+						Наши <span class="lighter"> ключевые продукты</span> для инвестиций
+					</h2>
+					<ul class="list products">
+						<li class="list__item products__item">
+							<h3 class="products__head">Платформа для автоследования</h3>
+							<p class="paragraph products__description">
+								Копирование стратегий в автономном режиме
+							</p>
+							<img
+								class="products__image"
+								src="./assets/images/common/product_1.webp"
+								srcset="./assets/images/retina/product_1@2x.webp 2x"
+								alt="Product 1"
+							/>
+						</li>
+						<li class="list__item products__item">
+							<h3 class="products__head">Платформа для робо-эдвайзинга</h3>
+							<p class="paragraph products__description">
+								Персонализированный подбор стратегий исходя из заданный
+								параметров
+							</p>
+							<img
+								class="products__image"
+								src="./assets/images/common/product_2.webp"
+								srcset="./assets/images/retina/product_2@2x.webp 2x"
+								alt="Product 2"
+							/>
+						</li>
+					</ul>
+				</div>
 			</section>
 		</main>
 	</body>
